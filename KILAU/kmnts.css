@@ -1,0 +1,279 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=popp');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #BED7DC;
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+    position: fixed;
+    height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 9999;
+    background-color: #29279C;
+}
+
+.abc {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    align-items: center;
+}
+
+header #toggler {
+    display: none;
+}
+
+.card-wrapper {
+    margin-top: 100px;
+}
+header .fa-bars{
+    font-size: 2rem;
+    color: black;
+    border-radius: 3rem;
+    /* padding: 2rem; */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.search form {
+    display: flex;
+    margin: 0;
+}
+
+.search input{
+    padding: 10px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.cardx{
+    display: flex;
+    gap: 20px;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #6663C2;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before, .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 20px;
+    background-color: #6158AA;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+
+.card-image{
+    position: relative;
+    height: 180px;
+    width: 280px;
+    border-radius: 15%;
+    background: white;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 4px solid #6663C2
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.desc{
+    font-size: 14px;
+    color: black;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: #504E85;
+}
+
+.footer {
+    background-color: #29279C;
+    padding: 32px 24px;
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.footer .container .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social p{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.social .ikon {
+    display: flex;
+    justify-content: center;
+}
+
+.social .ikon a{
+    text-decoration: none;
+    /* width: fit-content; */
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social .ikon a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.social .ikon a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social .ikon a:hover i {
+    color: white;
+    transition: 0.5s;
+
+}
+
+.navfoot {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    align-self: start;
+    gap: 24px;
+}
+
+
+.navfoot .cool h4{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.navfoot .cool ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 4px 0;
+    font-size: 1rem;
+}
+
+.navfoot .cool ul{
+    list-style-type: none;
+}
+
+.navfoot .cool ul li a:hover{
+    color: #FFC700;
+}
+
+.footerbot p{
+    color: white;
+    margin-bottom: -16px;
+}
